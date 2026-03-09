@@ -1,7 +1,14 @@
-// --- BLOCO 1: NAVEGAÇÃO E DOWNLOAD ---
+// --- BLOCO 1: NAVEGAÇÃO E ARQUIVOS ---
 document.getElementById('btn-download').addEventListener('click', function() {
-    // Em vez de rolar, ele agora "carrega" o novo arquivo
-    window.location.href = "downloads.html"; 
+    // Substitua pelo link real do seu repositório de arquivos
+    const urlArchives = "https://github.com/skylikeinovation/archives";
+});
+    
+    // Alerta de sistema para dar o feedback de CEO
+    alert("Redirecionando para os servidores de arquivos da Skylike...");
+    
+    // Abre o repositório na mesma aba
+    window.location.href = urlArchives;
 });
 
 document.getElementById('btn-vagas').addEventListener('click', function() {
