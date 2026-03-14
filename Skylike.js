@@ -6,18 +6,6 @@ document.getElementById('btn-download').addEventListener('click', function() {
     window.open(urlArchives, '_blank');
 });
 
-document.getElementById('btn-vagas').addEventListener('click', function() {
-    const destino = document.getElementById('vagas');
-    if (destino) destino.scrollIntoView({ behavior: 'smooth' });
-});
-
-// --- BLOCO 2: CRÉDITOS ---
-document.getElementById('btn-creditos').addEventListener('click', function(event) {
-    event.preventDefault();
-    const section = document.getElementById('creditos-ul');
-    if (section) section.scrollIntoView({ behavior: 'smooth' });
-});
-
 // --- BLOCO 3: CANDIDATURA (CORRIGIDO COM ALERT) ---
 document.getElementById('btn-candidatar').addEventListener('click', function() {
     const nomeInput = document.getElementById('nome-candidato');
@@ -33,7 +21,7 @@ document.getElementById('btn-candidatar').addEventListener('click', function() {
     const corpo = encodeURIComponent("Olá, meu nome é " + nome + ". Quero participar da Skylike.");
 
     alert("relatório preparado! abrindo sistema de e-mail...");
-    window.location.href = `mailto:${email}?subject=${assunto}&body=${corpo}`;
+    window.location.href = `mailto:${https://mail.proton.me}?subject=${assunto}&body=${corpo}`;
 });
 
 // --- BLOCO 4: SOBRE ---
