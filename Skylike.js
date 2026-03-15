@@ -21,7 +21,7 @@ document.getElementById('btn-candidatar').addEventListener('click', function() {
     const corpo = encodeURIComponent("Olá, meu nome é " + nome + ". Quero participar da Skylike.");
 
     alert("relatório preparado! abrindo sistema de e-mail...");
-    window.location.href = `mailto:${https://mail.proton.me}?subject=${assunto}&body=${corpo}`;
+    window.location.href = `mailto:${email}?subject=${assunto}&body=${corpo}`;
 });
 
 // --- BLOCO 4: SOBRE ---
