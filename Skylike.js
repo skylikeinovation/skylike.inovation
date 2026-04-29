@@ -1,40 +1,19 @@
-// --- BLOCO 1: NAVEGAÇÃO E ARQUIVOS (ABRE EM NOVA ABA) ---
-document.getElementById('btn-download').addEventListener('click', function() {
-    // O link do seu repositório de arquivos
-    const urlArchives = "https://github.com/skylikeinovation/archives"; 
-    
-    window.open(urlArchives, '_blank');
-});
-
-// --- BLOCO 3: CANDIDATURA (CORRIGIDO COM ALERT) ---
+// Candidatura com validação melhorada
 document.getElementById('btn-candidatar').addEventListener('click', function() {
     const nomeInput = document.getElementById('nome-candidato');
-    const nome = nomeInput.value;
+    const nome = nomeInput.value.trim();
 
     if (nome === "") {
-        alert("digite seu nome primeiro");
+        alert("Por favor, digite seu nome primeiro");
+        nomeInput.focus();
         return;
     }
 
-    const email = "skylike.contato@proton.me";
+    const email = "belbel.skylike@gmail.com";
     const assunto = encodeURIComponent("Candidatura Skylike - " + nome);
     const corpo = encodeURIComponent("Olá, meu nome é " + nome + ". Quero participar da Skylike.");
 
-    alert("relatório preparado! abrindo sistema de e-mail...");
+    alert("Relatório preparado! Abrindo sistema de e-mail seguro...");
     window.location.href = `mailto:${email}?subject=${assunto}&body=${corpo}`;
 });
 
-// --- BLOCO 4: SOBRE ---
-const btnSobre = document.getElementById('btn-sobre');
-if (btnSobre) {
-    btnSobre.addEventListener('click', () => {
-        const secaoSobre = document.getElementById('sobre');
-        if (secaoSobre) secaoSobre.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-}
-
-// --- BLOCO 5: ESPECIFICAÇÕES ---
-document.getElementById('especificações1').addEventListener('click', function() {
-    const destino = document.getElementById('especificações');
-    if (destino) destino.scrollIntoView({ behavior: 'smooth'});
-});

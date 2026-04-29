@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>skylike site</title>
-    <link rel="stylesheet"  href="Skylike.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicom.png">
-  </head>
-  <body>
-    <button type="button" id="btn-download">download</button
-                                                      
-    <h1>bem-vindos ao site da skylike</h1>
-    <h4>novidades</h4>
-    <h1>novo console skylike turbo console </h1>
-<img src="console3d.png" alt="Console">
-    <hr>
-    <div class="creditos">
-      <ul id="creditos-ul">
-      <li>desenvolvimento e design = belbel</li>
-      <li>design de assets = arthur</li>
-      <li>testes = giovanna kelly(gio) e bruno santos</li>
-    </ul>
-      
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skylike</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="Skylike.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-content">
+        <header class="hero">
+            <h1 class="hero-title">skylike</h1>
+            <p class="hero-subtitle">onde o hardware fica feliz</p>
+        </header>
 
-    <hr>
-  <input type="text" id="nome-candidato" placeholder="Seu nome">
+        <section class="news-section">
+            <h2 class="section-title">novidades</h2>
+            <div class="product-showcase">
+                <h3 class="product-title">novo console skylike turbo console</h3>
+                <div class="product-image">
+                    <img src="console3d.jpg" alt="Skylike Turbo Console">
+                </div>
+            </div>
+        </section>
 
-<button type="button" id="btn-candidatar">
-    Candidatar
-</button>
-      <hr>
-      <h3>sobre nossa empresa</h3>
-      <p id="sobre">Somos o pessoal da skylike e estamos a abrir esta empresa agora. A nossa empresa tem projetos fixes como o Bluebel OS e o Skylike Turbo Console, além de projetos de apps, jogos e navegadores. Ultimamente estamos a precisar de devs e designers, então, candidate-se!</p>
-      <hr> <div id="vagas">
-  <h3>vagas abertas:</h3>
-  <ul>
-    <li>desenvolvedor front-end (flat design)</li>
-    <li>designer de interfaces (UI/UX)</li>
-    <li> tester de consoles (Skylike Turbo)</li>
-  </ul>
-  <hr>
-</div>
-<h3 id="especificações">especificações do funcionario</h3>
-<p>vagas para desenvolvedor: precisa saber micropython e javascript</p>
-<p>para designer: visual minimalista sempre</p>
+        <section class="credits-section" id="creditos-section">
+            <div class="credits-content">
+                <ul id="creditos-ul" class="credits-list">
+                    <li>• desenvolvimento e design = gabriel jesus (belbel)</li>
+                    <li>• auxílio de design = cintia souza</li>
+                    <li>• testes = giovanna kelly (gio) e bruno santos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="application-section">
+            <div class="application-form">
+                <input type="text" id="nome-candidato" placeholder="Seu nome" class="name-input">
+                <button id="btn-candidatar" class="apply-btn">Candidatar</button>
+            </div>
+        </section>
+
+        <section class="downloads-section" id="downloads-section">
+            <h3 class="section-subtitle">links</h3>
+            <div class="downloads-grid">
+                <a href="https://ko-fi.com/skylikegames" class="download-item">kofi da skylikegames </a> <p> </p>
+                <a href="https://github.com/skylikeinovation" class="github">github da skylike</a>
+            </div>
+        </section>
+
+        <section class="about-section" id="sobre-section">
+            <h3 class="section-subtitle">sobre nossa empresa</h3>
+            <p id="sobre" class="about-text">
+                Somos o pessoal da skylike e estamos a abrir esta empresa agora. A nossa empresa tem projetos fixes como o Bluebel OS e o Skylike Turbo Console, além de projetos de apps, jogos e navegadores. Ultimamente estamos a precisar de devs e designers, então, candidate-se!
+            </p>
+        </section>
+
+
+    </main>
 
     <script src="Skylike.js"></script>
-
-  </body>
+</body>
 </html>
