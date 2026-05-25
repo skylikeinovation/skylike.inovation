@@ -3,63 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>skylike</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link rel="stylesheet" href="Skylike.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>skylike - tecnologia até o céu</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="main-content">
-        <header class="hero">
-            <h1 class="hero-title">skylike</h1>
-            <p class="hero-subtitle">onde o hardware fica feliz</p>
-        </header>
 
-        <section class="news-section">
-            <h2 class="section-title">novidades</h2>
-            <div class="product-showcase">
-                <h3 class="product-title">novo console skylike turbo console</h3>
-                <div class="product-image">
-                    <img src="console3d.jpg" alt="Skylike Turbo Console">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="favicon.png" alt="Skylike Logo">
+                <span>skylike</span>
+            </div>
+            <div class="nav-links">
+                <a href="https://get.skylike.com.br" target="_blank" rel="noopener noreferrer">Downloads</a>
+                <a href="#novidades">Novidades</a>
+                <a href="#creditos">Créditos</a>
+                <a href="#junte-se">Junte-se</a>
+                <a href="#links">Links</a>
+                <a href="#sobre">Sobre</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-blur-effect"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">skylike</h1>
+            <p class="hero-subtitle">tecnologia até o céu</p>
+            <div class="hero-divider"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="novidades" class="section news-section">
+            <div class="container">
+                <h2 class="section-title">novidades<span>.</span></h2>
+                <div class="product-showcase">
+                    <div class="product-info">
+                        <span class="badge">Next-Gen Hardware</span>
+                        <h3 class="product-title">Novo Skylike Turbo Console</h3>
+                        <p class="product-desc">O ecossistema definitivo para a execução dos nossos jogos e aplicações de alta performance.</p>
+                    </div>
+                    <div class="product-image-wrapper">
+                        <img src="console3d.png" alt="Skylike Turbo Console" class="product-image">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="credits-section" id="creditos-section">
-            <div class="credits-content">
-                <ul id="creditos-ul" class="credits-list">
-                    <li>• desenvolvimento e design = gabriel jesus (belbel)</li>
-                    <li>• auxílio de design = cintia souza</li>
-                    <li>• testes = giovanna kelly (gio) e bruno santos</li>
-                </ul>
+        <section id="creditos" class="section credits-section">
+            <div class="container">
+                <h2 class="section-title">créditos<span>.</span></h2>
+                <div class="credits-grid">
+                    <div class="credit-card">
+                        <div class="credit-icon">⚡</div>
+                        <span class="credit-role">desenvolvimento / design</span>
+                        <span class="credit-name">Gabriel Jesus (belbel)</span>
+                    </div>
+                    <div class="credit-card">
+                        <div class="credit-icon">🎨</div>
+                        <span class="credit-role">auxílio de design</span>
+                        <span class="credit-name">Cintia Souza</span>
+                    </div>
+                    <div class="credit-card">
+                        <div class="credit-icon">🧪</div>
+                        <span class="credit-role">testes de qualidade</span>
+                        <span class="credit-name">Bruno Baldinelli</span>
+                    </div>
+                    <div class="credit-card">
+                        <div class="credit-icon">👾</div>
+                        <span class="credit-role">sprites / artes digitais</span>
+                        <span class="credit-name">José Anthony & Davi Euclides</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="application-section">
-            <div class="application-form">
-                <input type="text" id="nome-candidato" placeholder="Seu nome" class="name-input">
-                <button id="btn-candidatar" class="apply-btn">Candidatar</button>
+        <section id="junte-se" class="section application-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <h2 class="section-title">junte-se à equipe</h2>
+                    <p class="application-subtitle">Estamos procurando desenvolvedores talentosos para expandir nossa tecnologia.</p>
+                    <div class="application-form">
+                        <input
+                            type="text"
+                            id="nome-candidato"
+                            placeholder="Seu nome completo"
+                            class="name-input"
+                            required
+                        >
+                        <button type="button" id="btn-candidatar" class="apply-btn">Candidatar</button>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="downloads-section" id="downloads-section">
-            <h3 class="section-subtitle">links</h3>
-            <div class="downloads-grid">
-                <a href="https://ko-fi.com/skylikegames" class="download-item">kofi da skylikegames </a> <p> </p>
-                <a href="https://github.com/skylikeinovation" class="github">github da skylike</a>
+        <section id="links" class="section links-section">
+            <div class="container">
+                <h2 class="section-title">links úteis<span>.</span></h2>
+                <div class="links-grid">
+                    <a href="https://ko-fi.com/skylikegames" target="_blank" rel="noopener noreferrer" class="link-card kofi">
+                        <div class="link-icon-wrapper">
+                            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 21H20C20.5523 21 21 20.5523 21 20C21 19.4477 20.5523 19 20 19H2V21Z" fill="currentColor"/>
+                                <path d="M18 5H5C3.89543 5 3 5.89543 3 7V13C3 16.3137 5.68629 19 9 19H14C17.3137 19 20 16.3137 20 13V11.5C21.3807 11.5 22.5 10.3807 22.5 9C22.5 7.61929 21.3807 6.5 20 6.5V5.5C20 5.22386 19.7761 5 19.5 5H18ZM18 13C18 15.2091 16.2091 17 14 17H9C6.79086 17 5 15.2091 5 13V7H18V13ZM20 9.5H18.1V8.5H20C20.2761 8.5 20.5 8.72386 20.5 9C20.5 9.27614 20.2761 9.5 20 9.5Z" fill="currentColor"/>
+                                <path d="M7 10C7.55228 10 8 9.55228 8 9C8 7.34315 9.34315 6 11 6C11.5523 6 12 5.55228 12 5C12 4.44772 11.5523 4 11 4C8.23858 4 6 6.23858 6 9C6 9.55228 6.44772 10 7 10Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="link-title">Ko-fi</h3>
+                        <p class="link-description">Apoie financeiramente a skylikegames</p>
+                    </a>
+
+                    <a href="https://github.com/skylikeinovation" target="_blank" rel="noopener noreferrer" class="link-card github">
+                        <div class="link-icon-wrapper">
+                            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.008.069-.008 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="link-title">GitHub</h3>
+                        <p class="link-description">Explore os repositórios da skylike</p>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <section class="about-section" id="sobre-section">
-            <h3 class="section-subtitle">sobre nossa empresa</h3>
-            <p id="sobre" class="about-text">
-                Somos o pessoal da skylike e estamos a abrir esta empresa agora. A nossa empresa tem projetos fixes como o Bluebel OS e o Skylike Turbo Console, além de projetos de apps, jogos e navegadores. Ultimamente estamos a precisar de devs e designers, então, candidate-se!
-            </p>
+        <section id="sobre" class="section about-section">
+            <div class="container">
+                <div class="about-box">
+                    <h2 class="section-title">sobre nossa empresa<span>.</span></h2>
+                    <p class="about-text">
+                        A <strong>skylike</strong> é uma empresa focada em romper barreiras tecnológicas. Atualmente, comandamos múltiplos ecossistemas em desenvolvimento, incluindo a <strong>BluebelStudio IDE</strong>, o robusto sistema operacional <strong>Bluebel OS</strong>, o cativante jogo <strong>bluefarm</strong> e o nosso poderoso ecossistema de entretenimento, o <strong>skylike turbo console</strong>.
+                    </p>
+                    <p class="about-highlight">
+                        Nossos horizontes são amplos, mas precisamos de mentes brilhantes. Estamos ativamente recrutando novos desenvolvedores para transformar esses conceitos em realidade de mercado.
+                    </p>
+                </div>
+            </div>
         </section>
-
-
     </main>
 
-    <script src="Skylike.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <p>copyright &copy; 2026 Skylike. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
